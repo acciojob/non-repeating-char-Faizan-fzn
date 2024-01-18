@@ -1,6 +1,6 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	let str="";
+	let result="";
 	for(let i = 0; i < str.length; i++){
 		let cnt = 0;
 		while(i+1 < str.length && str.charAt(i) === str.charAt(i+1)){
@@ -8,7 +8,8 @@ function firstNonRepeatedChar(str) {
 			cnt++;
 		}
 		if(cnt === 0){
-		return str.charAt(i);	
+		result = str.charAt(i);
+			return result;
 		}
 	}
 	return null;
