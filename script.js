@@ -8,7 +8,7 @@ function firstNonRepeatedChar(str) {
 			cnt++;
 		}
 		if(cnt === 0){
-		result = str.charAt(i);
+		result += str.charAt(i);
 			return result;
 		}
 	}
