@@ -7,11 +7,11 @@ function firstNonRepeatedChar(str) {
 			i++;
 			cnt++;
 		}
-		if(cnt > 0){
-			return null;
+		if(cnt === 0){
+		return str.charAt(i);	
 		}
 	}
-	return str.charAt(i);
+	return null;
 }
 // const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input)); 
