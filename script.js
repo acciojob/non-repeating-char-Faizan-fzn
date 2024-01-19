@@ -1,4 +1,4 @@
-function firstNonRepeatedChar(str) {
+function firstNonRepeatedChar(s) {
  // Write your code here
 	let r = "";
 	for(let i=0 ; i<s.length ; i++){
