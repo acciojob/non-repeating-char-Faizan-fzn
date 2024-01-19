@@ -1,16 +1,16 @@
 function firstNonRepeatedChar(str) {
  // Write your code here
-	let result="";
-	for(let i = 0; i < str.length; i++){
+	let r = "";
+	for(let i=0 ; i<s.length ; i++){
 		let cnt = 0;
-		for(let j = 0; j < str.length; j++){
-		if(str.charAt(i) === str.charAt(j)){
-			cnt++;
+		for( let j=0 ; j < s.length ; j++){
+			if(s.charAt(i)===s.charAt(j)){
+				cnt++;
+			}
 		}
-	}
-		if(cnt === 0){
-		result += str.charAt(i);
-			return result;
+		if(cnt===1){
+			r+= s.charAt(i);
+			return r;
 		}
 	}
 	return null;
